@@ -73,7 +73,8 @@ nav.scrolled {
 }
 nav.scrolled::before { opacity: 0; }
 .nav-logo { display: flex; align-items: center; }
-.nav-logo img { height: 38px; width: auto; display: block; }
+.nav-logo img { height: 38px; width: auto; display: block; filter: drop-shadow(0 1px 4px rgba(0,0,0,.65)); transition: filter .3s; }
+nav.scrolled .nav-logo img { filter: none; }
 .nav-links { display: flex; align-items: center; gap: 2.5rem; list-style: none; }
 .nav-links a {
   font-size: .78rem; font-weight: 500;
@@ -233,9 +234,11 @@ section { padding: var(--sp) var(--pad); }
 .proj-card:nth-child(2) { grid-column: span 5; }
 .proj-card:nth-child(3) { grid-column: span 5; }
 .proj-card:nth-child(4) { grid-column: span 7; }
-.proj-card:nth-child(5) { grid-column: span 12; }
+.proj-card:nth-child(5) { grid-column: span 5; }
+.proj-card:nth-child(6) { grid-column: span 7; }
 .proj-ph { width: 100%; padding-bottom: 62%; position: relative; transition: filter .32s; }
-.proj-card:nth-child(5) .proj-ph { padding-bottom: 33%; }
+/* Cover link — invisible overlay makes full card clickable for case study */
+.proj-cover-link { position: absolute; inset: 0; z-index: 5; }
 .proj-ph-bg {
   position: absolute; inset: 0;
   background: linear-gradient(135deg, #DDD5C4 0%, #D4CAB8 55%, #DDD5C4 100%);
@@ -342,7 +345,6 @@ footer { background: var(--text-1); padding: 2.75rem var(--pad); }
   .nav-burger { display: flex; }
   .proj-grid { grid-template-columns: 1fr 1fr; }
   .proj-card:nth-child(n) { grid-column: span 1; }
-  .proj-card:nth-child(5) { grid-column: span 2; }
   .about-in { grid-template-columns: 1fr; }
   .about-ph-acc { display: none; }
   .about-lic { right: 1rem; }
@@ -485,6 +487,16 @@ footer { background: var(--text-1); padding: 2.75rem var(--pad); }
     <article class="proj-card rv">
       <div class="proj-ph" role="img" aria-label="Completed self-storage facility build"><div class="proj-ph-bg" style="background-image:url('assets/3681317510842477414.jpeg');background-size:cover;background-position:center;"></div></div>
       <div class="proj-meta"><p class="proj-type">Concrete</p><p class="proj-name">Storage Facility Concrete</p></div>
+      <div class="proj-ol" aria-hidden="true"></div>
+    </article>
+    <article class="proj-card rv">
+      <a href="water-treatment-facility.html" class="proj-cover-link" aria-label="View Water Treatment Facility case study"></a>
+      <div class="proj-ph" role="img" aria-label="Completed concrete water treatment tank against clear blue sky"><div class="proj-ph-bg" style="background-image:url('assets/IMG_1753_full.jpg');background-size:cover;background-position:center top;"></div></div>
+      <div class="proj-meta">
+        <p class="proj-type">Infrastructure</p>
+        <p class="proj-name">Water Treatment Facility</p>
+        <p style="font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-top:.35rem;font-family:var(--font-b);">View Case Study &rarr;</p>
+      </div>
       <div class="proj-ol" aria-hidden="true"></div>
     </article>
   </div>
