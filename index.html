@@ -62,12 +62,8 @@ nav.scrolled {
   border-color: var(--border);
   box-shadow: 0 1px 0 var(--border);
 }
-.nav-logo {
-  font-family: var(--font-d); font-weight: 700;
-  font-size: 1.3rem; letter-spacing: .08em; text-transform: uppercase;
-  color: var(--text-1);
-}
-.nav-logo span { color: var(--accent); }
+.nav-logo { display: flex; align-items: center; }
+.nav-logo img { height: 38px; width: auto; display: block; }
 .nav-links { display: flex; align-items: center; gap: 2.5rem; list-style: none; }
 .nav-links a {
   font-size: .78rem; font-weight: 500;
@@ -105,7 +101,7 @@ nav.scrolled {
       rgba(245,240,232,.84) 68%,
       #F5F0E8 100%
     ),
-    url('assets/pelican-resized.jpg') center/cover no-repeat;
+    url('assets/3681317510842477414.jpeg') center/cover no-repeat;
 }
 /* Subtle warm grain — aged canvas/construction paper texture */
 .hero-bg::after {
@@ -356,7 +352,7 @@ footer { background: var(--text-1); padding: 2.75rem var(--pad); }
 
 <!-- NAV -->
 <nav id="nav" aria-label="Main navigation">
-  <a href="#top" class="nav-logo" aria-label="Pelican General Construction home">Pelican<span>.</span></a>
+  <a href="#top" class="nav-logo" aria-label="Pelican General Construction home"><img src="assets/pelican-logo-transparent.png" alt="Pelican General Construction"></a>
   <ul class="nav-links" id="nav-links" role="list">
     <li><a href="#services">Services</a></li>
     <li><a href="#projects">Projects</a></li>
