@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /finalized-dark.html
+Disallow: /finalized-light.html
+
+Sitemap: https://www.pelicangeneralconstruction.com/sitemap.xml
