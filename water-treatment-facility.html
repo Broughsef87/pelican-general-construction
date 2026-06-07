@@ -106,9 +106,23 @@ nav.scrolled {
   box-shadow: 0 1px 0 var(--border);
 }
 nav.scrolled::before { opacity: 0; }
-.nav-logo { display: flex; align-items: center; }
-.nav-logo img { height: 38px; width: auto; display: block; filter: drop-shadow(0 1px 4px rgba(0,0,0,.65)); transition: filter .3s; }
-nav.scrolled .nav-logo img { filter: none; }
+.nav-logo { display: flex; align-items: center; gap: .6rem; }
+.nav-badge { height: 46px; width: auto; display: block; filter: drop-shadow(0 1px 4px rgba(0,0,0,.55)); transition: filter .3s; }
+nav.scrolled .nav-badge { filter: none; }
+.nav-wordmark { display: flex; flex-direction: column; line-height: 1; }
+.nav-wm-1 {
+  font-family: var(--font-d); font-weight: 700; text-transform: uppercase;
+  font-size: 1.18rem; letter-spacing: .03em; color: #fff;
+  text-shadow: 0 1px 4px rgba(0,0,0,.6); transition: color .25s, text-shadow .25s;
+}
+.nav-wm-2 {
+  font-family: var(--font-d); font-weight: 500; text-transform: uppercase;
+  font-size: .56rem; letter-spacing: .19em; margin-top: 3px;
+  color: rgba(255,255,255,.9); text-shadow: 0 1px 3px rgba(0,0,0,.6);
+  transition: color .25s, text-shadow .25s;
+}
+nav.scrolled .nav-wm-1 { color: var(--text-1); text-shadow: none; }
+nav.scrolled .nav-wm-2 { color: var(--text-2); text-shadow: none; }
 .nav-links { display: flex; align-items: center; gap: 2.5rem; list-style: none; }
 .nav-links a {
   font-size: .78rem; font-weight: 500;
@@ -357,6 +371,12 @@ footer {
 @media (max-width: 480px) {
   .cs-grid { grid-template-columns: 1fr; }
   .cs-photo:nth-child(n) { grid-column: span 1; }
+  .nav-wm-1 { font-size: 1.02rem; }
+  .nav-wm-2 { font-size: .5rem; letter-spacing: .15em; }
+  .nav-badge { height: 40px; }
+}
+@media (max-width: 340px) {
+  .nav-wm-2 { display: none; }
 }
 </style>
 </head>
@@ -365,7 +385,8 @@ footer {
 <!-- NAV -->
 <nav id="nav" role="navigation" aria-label="Main navigation">
   <a href="/" class="nav-logo" aria-label="Pelican General Construction home">
-    <img src="assets/pelican-logo-transparent.png" alt="Pelican General Construction">
+    <img src="assets/pelican-badge.png" alt="Pelican General Construction" class="nav-badge" width="46" height="46">
+    <span class="nav-wordmark"><span class="nav-wm-1">Pelican</span><span class="nav-wm-2">General Construction</span></span>
   </a>
   <ul class="nav-links" id="nav-links" role="list">
     <li><a href="/#services">Services</a></li>
