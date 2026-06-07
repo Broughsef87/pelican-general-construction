@@ -73,6 +73,7 @@
   --bg-surface: #131210;
   --bg-raised:  #1C1914;
   --accent:     #4F7359;
+  --forest:     #2B4031;  /* brand primary — logo green (design system) */
   --accent-h:   #5F8469;
   --text-1:     #F2EDE8;
   --text-2:     #8A7E72;
@@ -446,8 +447,10 @@ footer {
   display: flex; justify-content: space-between;
   align-items: center; gap: 2rem; flex-wrap: wrap;
 }
-.f-logo { font-family: var(--font-d); font-weight: 700; font-size: 1.1rem; letter-spacing: .08em; text-transform: uppercase; }
-.f-logo span { color: var(--accent); }
+.f-logo { display: flex; align-items: center; gap: .7rem; }
+.f-badge { height: 42px; width: auto; display: block; }
+.f-logo-txt { font-family: var(--font-d); font-weight: 700; font-size: 1.1rem; letter-spacing: .08em; text-transform: uppercase; }
+.f-logo-txt span { color: var(--accent); }
 .f-lic { font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--text-3); margin-top: .2rem; }
 .f-links { display: flex; gap: 2rem; list-style: none; flex-wrap: wrap; }
 .f-links a { font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--text-3); transition: color .2s; }
@@ -855,7 +858,7 @@ footer {
 <footer>
   <div class="footer-in">
     <div>
-      <div class="f-logo">Pelican<span>.</span> General Construction</div>
+      <div class="f-logo"><img src="assets/pelican-badge-white.png" alt="" class="f-badge" width="42" height="42"><span class="f-logo-txt">Pelican<span>.</span> General Construction</span></div>
       <div class="f-lic">License #PELICGC750MJ</div>
     </div>
     <ul class="f-links" role="list">
