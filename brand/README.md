@@ -18,8 +18,9 @@ Brand assets generated from the circular badge logo. Everything here is web/digi
 | Cream         | `#F4EFE3` | Field / reverse color. Backgrounds, knockouts.   |
 | Near-black    | `#0A0F0A` | One-color print, fine outlines.                  |
 
-The badge green (`#2B4031`) is deeper than the current site accent (`#456650`). Worth
-aligning the site palette to the logo during the on-site rollout.
+The badge green (`#2B4031`) is deeper than the site's interactive accent (`#456650`,
+"moss"). The site keeps moss for links/buttons/eyebrows and uses forest as the brand
+anchor (the logo itself). `--forest: #2B4031` is defined as a token in the site CSS.
 
 ---
 
@@ -43,9 +44,10 @@ would be illegible: favicons, app tiles, social avatars, small UI.
 - `pelican-og-1200x630.png` — link-share preview image (Open Graph / Twitter card).
 
 ### `../assets/` — favicons (live on the site)
-`favicon-16/32/48/192/512`, `apple-touch-icon` (180, cream tile), `favicon.ico`
-(real multi-size ICO: 16/32/48). All use the **medallion** — the full badge is
-unreadable below ~64px.
+`favicon-16/32/48/192/512`, `apple-touch-icon` (180, cream tile), `favicon.ico` (32px).
+These currently use the **full badge**, regenerated from the native source. At 16–32px the
+ring text isn't legible (expected for any detailed badge); if you ever want razor-sharp
+tiny favicons, regenerate them from `icon/` (the "P" medallion) instead.
 
 ### `contact-sheet.png`
 One-image overview of the whole suite. For quick review / sharing.
