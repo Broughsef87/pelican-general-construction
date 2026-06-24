@@ -16,10 +16,19 @@
 <meta name="twitter:title" content="Pelican General Construction | Commercial General Contractor in the Tri-Cities, WA">
 <meta name="twitter:description" content="Licensed general contractor serving the Tri-Cities, WA and Eastern Washington. Commercial construction, new builds, tenant improvements &amp; pre-engineered metal buildings.">
 <meta name="twitter:image" content="https://www.pelicangeneralconstruction.com/assets/pelican-og.jpg">
+<!-- ===== Analytics & Search Console (FOR-81) — pending values from Andrew =====
+     ACTIVATE when supplied:
+     1) GSC: replace TOKEN in the meta tag below and uncomment (or verify via DNS TXT).
+     2) GA4: replace G-XXXXXXXXXX (both spots) and uncomment. Sub-pages under
+        /services, /tri-cities, /resources activate via assets/site.js (set GA4_ID there). -->
+<!-- <meta name="google-site-verification" content="GSC_VERIFICATION_TOKEN"> -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "GeneralContractor",
+  "@id": "https://www.pelicangeneralconstruction.com/#organization",
   "name": "Pelican General Construction",
   "description": "Licensed general contractor serving the Tri-Cities, Washington — Richland, Kennewick, and Pasco — plus Spokane and Eastern Washington. Commercial construction, new builds, tenant improvements, design-build, project management, subcontracting, and pre-engineered metal buildings.",
   "url": "https://www.pelicangeneralconstruction.com",
@@ -36,7 +45,8 @@
     {"@type": "City", "name": "Richland"},
     {"@type": "City", "name": "Kennewick"},
     {"@type": "City", "name": "Pasco"},
-    {"@type": "City", "name": "Spokane"}
+    {"@type": "City", "name": "Spokane"},
+    {"@type": "AdministrativeArea", "name": "Eastern Washington"}
   ],
   "hasCredential": {
     "@type": "EducationalOccupationalCredential",
@@ -56,6 +66,11 @@
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pre-Engineered Metal Buildings"}}
     ]
   },
+  "memberOf": [
+    {"@type": "Organization", "name": "Home Builders Association (HBA)"},
+    {"@type": "Organization", "name": "Tri-Cities Regional Chamber of Commerce"},
+    {"@type": "Organization", "name": "Tri-Cities Construction Council"}
+  ],
   "sameAs": ["https://www.facebook.com/profile.php?id=61578110233521"]
 }
 </script>
@@ -451,7 +466,7 @@ footer { background: var(--text-1); padding: 2.75rem var(--pad); }
 <!-- NAV -->
 <nav id="nav" aria-label="Main navigation">
   <a href="#top" class="nav-logo" aria-label="Pelican General Construction home">
-    <img src="assets/pelican-badge.png" alt="Pelican General Construction" class="nav-badge" width="54" height="54">
+    <img src="/assets/pelican-badge.png" alt="Pelican General Construction" class="nav-badge" width="54" height="54">
     <span class="nav-wordmark"><span class="nav-wm-1">Pelican</span><span class="nav-wm-2">General Construction</span></span>
   </a>
   <ul class="nav-links" id="nav-links" role="list">
@@ -505,6 +520,7 @@ footer { background: var(--text-1); padding: 2.75rem var(--pad); }
       <svg class="svc-icon" viewBox="0 0 38 38" aria-hidden="true"><rect x="3" y="19" width="32" height="16"/><polyline points="1,21 19,5 37,21"/><rect x="14" y="27" width="10" height="8"/></svg>
       <h3 class="svc-name">Commercial Construction</h3>
       <p class="svc-desc">New commercial builds and tenant improvements &mdash; office, retail, and industrial. From site prep through certificate of occupancy, built right the first time.</p>
+      <a href="/services/commercial-construction" style="display:inline-block;margin-top:.9rem;font-family:var(--font-d);font-weight:600;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);">Learn More &rarr;</a>
     </article>
     <article class="svc-card rv">
       <p class="svc-num">02</p>
@@ -517,6 +533,7 @@ footer { background: var(--text-1); padding: 2.75rem var(--pad); }
       <svg class="svc-icon" viewBox="0 0 38 38" aria-hidden="true"><rect x="3" y="3" width="13" height="13"/><rect x="22" y="3" width="13" height="13"/><rect x="3" y="22" width="13" height="13"/><line x1="22" y1="28.5" x2="35" y2="28.5"/><line x1="28.5" y1="22" x2="28.5" y2="35"/></svg>
       <h3 class="svc-name">Design Build</h3>
       <p class="svc-desc">Single-point accountability from concept through construction. We work alongside architects and designers to streamline your project.</p>
+      <a href="/services/design-build" style="display:inline-block;margin-top:.9rem;font-family:var(--font-d);font-weight:600;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);">Learn More &rarr;</a>
     </article>
     <article class="svc-card rv">
       <p class="svc-num">04</p>
@@ -535,8 +552,10 @@ footer { background: var(--text-1); padding: 2.75rem var(--pad); }
       <svg class="svc-icon" viewBox="0 0 38 38" aria-hidden="true"><rect x="2" y="16" width="34" height="20"/><line x1="2" y1="16" x2="19" y2="5"/><line x1="36" y1="16" x2="19" y2="5"/><line x1="11" y1="16" x2="11" y2="36"/><line x1="27" y1="16" x2="27" y2="36"/><line x1="2" y1="28" x2="36" y2="28"/></svg>
       <h3 class="svc-name">Pre-Engineered Metal Buildings</h3>
       <p class="svc-desc">A Pelican specialty &mdash; cost-effective pre-engineered metal buildings for commercial and industrial use. Fast to erect, built to last.</p>
+      <a href="/services/metal-buildings" style="display:inline-block;margin-top:.9rem;font-family:var(--font-d);font-weight:600;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);">Learn More &rarr;</a>
     </article>
   </div>
+  <p class="rv" style="text-align:center;margin-top:2.75rem;font-size:.92rem;color:var(--text-2);">Building in <a href="/tri-cities/richland" style="color:var(--accent);font-weight:600;">Richland</a>, <a href="/tri-cities/kennewick" style="color:var(--accent);font-weight:600;">Kennewick</a>, or <a href="/tri-cities/pasco" style="color:var(--accent);font-weight:600;">Pasco</a>? Read our <a href="/resources/commercial-construction-cost-tri-cities" style="color:var(--accent);font-weight:600;">Tri-Cities commercial construction cost guide</a>.</p>
 </section>
 
 <!-- PROJECTS -->
@@ -683,9 +702,20 @@ footer { background: var(--text-1); padding: 2.75rem var(--pad); }
 <footer>
   <div class="footer-in">
     <div>
-      <div class="f-logo"><img src="assets/pelican-badge-white.png" alt="" class="f-badge" width="42" height="42"><span class="f-logo-txt">Pelican<span>.</span> General Construction</span></div>
+      <div class="f-logo"><img src="/assets/pelican-badge-white.png" alt="" class="f-badge" width="42" height="42"><span class="f-logo-txt">Pelican<span>.</span> General Construction</span></div>
       <div class="f-lic">License #PELICGC750MJ</div>
     </div>
+    <ul class="f-links" role="list">
+      <li><a href="/services/commercial-construction">Commercial Construction</a></li>
+      <li><a href="/services/metal-buildings">Metal Buildings</a></li>
+      <li><a href="/services/design-build">Design-Build</a></li>
+    </ul>
+    <ul class="f-links" role="list">
+      <li><a href="/tri-cities/richland">Richland, WA</a></li>
+      <li><a href="/tri-cities/kennewick">Kennewick, WA</a></li>
+      <li><a href="/tri-cities/pasco">Pasco, WA</a></li>
+      <li><a href="/resources/commercial-construction-cost-tri-cities">Cost Guide</a></li>
+    </ul>
     <ul class="f-links" role="list">
       <li><a href="#services">Services</a></li>
       <li><a href="#projects">Projects</a></li>

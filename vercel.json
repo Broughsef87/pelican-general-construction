@@ -1,4 +1,5 @@
 {
   "name": "pelican-general-construction",
-  "version": 2
+  "version": 2,
+  "trailingSlash": false
 }
