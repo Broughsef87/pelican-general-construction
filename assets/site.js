@@ -1,7 +1,7 @@
 /* GA4 (FOR-81): set GA4_ID to the Measurement ID (e.g. 'G-XXXXXXXXXX') from Andrew
    to activate analytics across all /services, /tri-cities, /resources pages. Empty = off. */
 (function () {
-  var GA4_ID = '';
+  var GA4_ID = 'G-ERBQPGGHDS';
   if (!GA4_ID) return;
   var s = document.createElement('script');
   s.async = true;

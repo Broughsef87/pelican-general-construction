@@ -16,14 +16,10 @@
 <meta name="twitter:title" content="Pelican General Construction | Commercial General Contractor in the Tri-Cities, WA">
 <meta name="twitter:description" content="Licensed general contractor serving the Tri-Cities, WA and Eastern Washington. Commercial construction, new builds, tenant improvements &amp; pre-engineered metal buildings.">
 <meta name="twitter:image" content="https://www.pelicangeneralconstruction.com/assets/pelican-og.jpg">
-<!-- ===== Analytics & Search Console (FOR-81) — pending values from Andrew =====
-     ACTIVATE when supplied:
-     1) GSC: replace TOKEN in the meta tag below and uncomment (or verify via DNS TXT).
-     2) GA4: replace G-XXXXXXXXXX (both spots) and uncomment. Sub-pages under
-        /services, /tri-cities, /resources activate via assets/site.js (set GA4_ID there). -->
-<!-- <meta name="google-site-verification" content="GSC_VERIFICATION_TOKEN"> -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
+<!-- Analytics (FOR-81): GA4 live. Google Search Console verified via DNS TXT (Vercel) — no meta tag needed.
+     Sub-pages under /services, /tri-cities, /resources fire GA4 via assets/site.js (GA4_ID). -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ERBQPGGHDS"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ERBQPGGHDS');</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -34,7 +30,6 @@
   "url": "https://www.pelicangeneralconstruction.com",
   "logo": "https://www.pelicangeneralconstruction.com/assets/pelican-badge.png",
   "image": "https://www.pelicangeneralconstruction.com/assets/657882827_122160545870937007_4237952184044133495_n.jpg",
-  "telephone": "+19713312514",
   "address": {
     "@type": "PostalAddress",
     "addressRegion": "WA",
@@ -656,10 +651,6 @@ footer { background: var(--text-1); padding: 2.75rem var(--pad); }
         <div class="contact-det">
           <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3.5 4.5 8.5 4.5 8.5S12.5 9.5 12.5 6C12.5 3.5 10.5 1.5 8 1.5z"/><circle cx="8" cy="6" r="1.5"/></svg>
           <span>Tri-Cities, Washington</span>
-        </div>
-        <div class="contact-det">
-          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3.5A1.5 1.5 0 014.5 2h.878a.5.5 0 01.484.374l.7 2.8a.5.5 0 01-.145.497L5.2 6.9A8.01 8.01 0 009.1 10.8l1.229-1.217a.5.5 0 01.497-.145l2.8.7A.5.5 0 0114 10.622V11.5A1.5 1.5 0 0112.5 13C6.701 13 2 8.299 2 3.5A1.5 1.5 0 013 3.5z"/></svg>
-          <a href="tel:9713312514" style="color:inherit;transition:color .2s" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='inherit'">(971) 331-2514</a>
         </div>
         <div class="contact-det">
           <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3h10a1 1 0 011 1v8a1 1 0 01-1 1H3a1 1 0 01-1-1V4a1 1 0 011-1z"/><polyline points="2,4 8,9.5 14,4"/></svg>
