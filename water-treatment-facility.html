@@ -175,6 +175,14 @@ nav.scrolled .nav-phone-m { color: var(--text-1); text-shadow: none; }
       #1A1510 100%
     ),
     url('assets/IMG_1420_full.jpg') center/cover no-repeat;
+  background-image:
+    linear-gradient(to bottom,
+      rgba(26,21,16,.12) 0%,
+      rgba(26,21,16,.45) 40%,
+      rgba(26,21,16,.88) 75%,
+      #1A1510 100%
+    ),
+    image-set(url('assets/IMG_1420_full.webp') type('image/webp'), url('assets/IMG_1420_full.jpg') type('image/jpeg'));
 }
 .cs-hero-content { position: relative; max-width: 860px; }
 .cs-eyebrow {
@@ -485,36 +493,48 @@ footer {
 
     <div class="cs-photo">
       <div class="cs-ph">
-        <img src="assets/IMG_1420_full.jpg"
-             alt="Water treatment concrete tank under construction — scaffolding, rebar formwork, and cement truck on site"
+        <picture>
+             <source srcset="assets/IMG_1420_full.webp" type="image/webp">
+             <img src="assets/IMG_1420_full.jpg"
+                  alt="Water treatment concrete tank under construction — scaffolding, rebar formwork, and cement truck on site"
              loading="lazy">
+        </picture>
       </div>
       <p class="cs-ph-caption">Tank — Construction Phase</p>
     </div>
 
     <div class="cs-photo">
       <div class="cs-ph">
-        <img src="assets/IMG_1421_full.jpg"
-             alt="Concrete tank construction with rebar forming in foreground and cement mixer in background"
+        <picture>
+             <source srcset="assets/IMG_1421_full.webp" type="image/webp">
+             <img src="assets/IMG_1421_full.jpg"
+                  alt="Concrete tank construction with rebar forming in foreground and cement mixer in background"
              loading="lazy">
+        </picture>
       </div>
       <p class="cs-ph-caption">Foundation &amp; Forming</p>
     </div>
 
     <div class="cs-photo">
       <div class="cs-ph">
-        <img src="assets/IMG_1755_full.jpg"
-             alt="Completed concrete water treatment storage tank with metal access ladder against blue sky"
+        <picture>
+             <source srcset="assets/IMG_1755_full.webp" type="image/webp">
+             <img src="assets/IMG_1755_full.jpg"
+                  alt="Completed concrete water treatment storage tank with metal access ladder against blue sky"
              loading="lazy">
+        </picture>
       </div>
       <p class="cs-ph-caption">Completed Tank</p>
     </div>
 
     <div class="cs-photo">
       <div class="cs-ph">
-        <img src="assets/IMG_1754_full.jpg"
-             alt="Completed water treatment facility — CMU pump house and concrete tank with fencing"
+        <picture>
+             <source srcset="assets/IMG_1754_full.webp" type="image/webp">
+             <img src="assets/IMG_1754_full.jpg"
+                  alt="Completed water treatment facility — CMU pump house and concrete tank with fencing"
              loading="lazy">
+        </picture>
       </div>
       <p class="cs-ph-caption">Completed Facility</p>
     </div>
