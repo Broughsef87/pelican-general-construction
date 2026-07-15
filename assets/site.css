@@ -75,6 +75,11 @@ nav.scrolled .nav-links a:hover { color: var(--text-1); }
 .btn-quote:hover { background: var(--accent) !important; color: #fff !important; }
 .nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; background: none; border: none; }
 .nav-burger span { display: block; width: 24px; height: 1.5px; background: #fff; }
+/* Click-to-call: desktop nav link (FOR-138) */
+.nav-links a.nav-phone { font-weight: 600; letter-spacing: .08em; }
+/* Click-to-call: always-visible mobile phone (shown < 768px, sits beside burger) */
+.nav-phone-m { display: none; font-size: .8rem; font-weight: 600; letter-spacing: .06em; color: rgba(255,255,255,.95); text-shadow: 0 1px 4px rgba(0,0,0,.6); white-space: nowrap; }
+nav.scrolled .nav-phone-m { color: var(--text-1); text-shadow: none; }
 
 /* ============ PAGE HERO (forest band) ============ */
 .page-hero {
@@ -163,6 +168,8 @@ nav.scrolled .nav-links a:hover { color: var(--text-1); }
 .footer-brand .f-logo-txt { font-family: var(--font-d); font-size: 1.1rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--bg-deep); }
 .footer-brand .f-logo-txt span { color: var(--accent); }
 .footer-brand .f-lic { font-size: .68rem; letter-spacing: .15em; text-transform: uppercase; color: rgba(245,240,232,.4); margin-top: .9rem; line-height: 1.7; }
+.footer-brand .f-tel { color: rgba(245,240,232,.78); font-weight: 600; transition: color .2s; }
+.footer-brand .f-tel:hover { color: var(--accent-h); }
 .footer-col h4 { font-family: var(--font-d); font-size: .72rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: rgba(245,240,232,.55); margin-bottom: 1rem; }
 .footer-col ul { list-style: none; display: grid; gap: .6rem; }
 .footer-col a { font-size: .82rem; color: rgba(245,240,232,.78); transition: color .2s; }
@@ -177,6 +184,10 @@ nav.scrolled .nav-links a:hover { color: var(--text-1); }
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .nav-burger { display: flex; }
+  .nav-phone-m { display: inline-block; }
+}
+@media (max-width: 400px) {
+  .nav-phone-m { font-size: .72rem; }
 }
 @media (max-width: 560px) {
   .footer-grid { grid-template-columns: 1fr; }

@@ -32,7 +32,8 @@
   "publisher": {
     "@type": "GeneralContractor",
     "name": "Pelican General Construction",
-    "url": "https://www.pelicangeneralconstruction.com"
+    "url": "https://www.pelicangeneralconstruction.com",
+    "telephone": "+19713312514"
   }
 }
 </script>
@@ -149,6 +150,12 @@ nav.scrolled .btn-quote { text-shadow: none !important; }
   cursor: pointer; padding: 6px; background: none; border: none;
 }
 .nav-burger span { display: block; width: 24px; height: 1.5px; background: #fff; }
+/* Click-to-call (FOR-138) */
+.nav-links a.nav-phone { font-weight: 600; letter-spacing: .08em; }
+.nav-phone-m { display: none; font-size: .8rem; font-weight: 600; letter-spacing: .06em; color: rgba(255,255,255,.95); text-shadow: 0 1px 4px rgba(0,0,0,.6); white-space: nowrap; }
+nav.scrolled .nav-phone-m { color: var(--text-1); text-shadow: none; }
+.f-phone { color: var(--text-2); font-weight: 600; transition: color .2s; }
+.f-phone:hover { color: var(--accent); }
 
 /* ============ HERO ============ */
 .cs-hero {
@@ -364,6 +371,7 @@ footer {
 /* ============ RESPONSIVE ============ */
 @media (max-width: 768px) {
   .nav-links { display: none; }
+  .nav-phone-m { display: inline-block; }
   .nav-burger { display: flex; }
   .cs-overview { grid-template-columns: 1fr; gap: 2.5rem; }
   .cs-grid { grid-template-columns: 1fr 1fr; }
@@ -394,8 +402,10 @@ footer {
     <li><a href="/#services">Services</a></li>
     <li><a href="/#projects">Projects</a></li>
     <li><a href="/#about">About</a></li>
+    <li><a href="tel:9713312514" class="nav-phone">(971) 331-2514</a></li>
     <li><a href="/#contact" class="btn-quote">Get a Quote</a></li>
   </ul>
+  <a href="tel:9713312514" class="nav-phone-m">(971) 331-2514</a>
   <button class="nav-burger" id="burger" aria-label="Toggle navigation" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
@@ -523,7 +533,7 @@ footer {
   <div class="footer-in">
     <div>
       <div class="f-logo"><img src="assets/pelican-badge.png" alt="" class="f-badge" width="42" height="42"><span class="f-logo-txt">Pelican<span>.</span> General Construction</span></div>
-      <div class="f-lic">License #PELICGC750MJ</div>
+      <div class="f-lic">License #PELICGC750MJ &middot; <a href="tel:9713312514" class="f-phone">(971) 331-2514</a></div>
     </div>
     <ul class="f-links" role="list">
       <li><a href="/#services">Services</a></li>
