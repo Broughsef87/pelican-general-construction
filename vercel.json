@@ -1,5 +1,7 @@
 {
   "name": "pelican-general-construction",
   "version": 2,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "buildCommand": "node scripts/update-sitemap-lastmod.js",
+  "outputDirectory": "."
 }
