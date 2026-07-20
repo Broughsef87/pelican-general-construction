@@ -6,14 +6,9 @@
   "outputDirectory": ".",
   "redirects": [
     { "source": "/team", "destination": "/#about", "permanent": true },
-    { "source": "/team/", "destination": "/#about", "permanent": true },
     { "source": "/projects", "destination": "/#projects", "permanent": true },
-    { "source": "/projects/", "destination": "/#projects", "permanent": true },
     { "source": "/contact", "destination": "/#contact", "permanent": true },
-    { "source": "/contact/", "destination": "/#contact", "permanent": true },
     { "source": "/about", "destination": "/#about", "permanent": true },
-    { "source": "/about/", "destination": "/#about", "permanent": true },
-    { "source": "/services", "destination": "/#services", "permanent": true },
-    { "source": "/services/", "destination": "/#services", "permanent": true }
+    { "source": "/services", "destination": "/#services", "permanent": true }
   ]
 }
