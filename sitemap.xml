@@ -61,8 +61,14 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.pelicangeneralconstruction.com/water-treatment-facility.html</loc>
-    <lastmod>2026-07-15</lastmod>
+    <loc>https://www.pelicangeneralconstruction.com/projects</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.pelicangeneralconstruction.com/projects/water-treatment-facility</loc>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
