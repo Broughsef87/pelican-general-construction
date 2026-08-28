@@ -5,10 +5,30 @@
   "buildCommand": "node scripts/update-sitemap-lastmod.js",
   "outputDirectory": ".",
   "redirects": [
-    { "source": "/team", "destination": "/#about", "permanent": true },
-    { "source": "/projects", "destination": "/#projects", "permanent": true },
-    { "source": "/contact", "destination": "/#contact", "permanent": true },
-    { "source": "/about", "destination": "/#about", "permanent": true },
-    { "source": "/services", "destination": "/#services", "permanent": true }
+    {
+      "source": "/team",
+      "destination": "/#about",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/#contact",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/#about",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/water-treatment-facility.html",
+      "destination": "/projects/water-treatment-facility",
+      "statusCode": 301
+    }
   ]
 }
